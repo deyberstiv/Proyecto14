@@ -1,0 +1,67 @@
+/* Estilos generales */
+body {
+    background-color: #f0f0f0; /* Color de fondo */
+    background-image: url('https://marketplace.canva.com/EAE-baKUJXc/1/0/1600w/canva-fondo-virtual-para-zoom-con-flores-yMcxDuKYVPo.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+    background-position: center;
+    margin: 0;
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+h1 {
+    font-family: 'MedievalSharp', cursive; /* Fuente Old English */
+    font-size: 3em; /* Ajusta el tamaño según lo que necesites */
+    margin-bottom: 20px; /* Espacio debajo del texto */
+    text-align: center;
+    color: #fff; /* Color blanco para el título */
+}
+
+/* CSS para centrar la imagen y ajustarla a un tamaño fijo */
+/* Asegurar que las imágenes tengan un tamaño adecuado y se mantengan centradas */
+.imagen-cuestionario {
+    width: 100%; /* Ajustamos el ancho al 100% del contenedor */
+    max-width: 400px; /* Limitar el ancho máximo */
+    max-height: 200px; /* Limitar la altura máxima */
+    object-fit: contain; /* Asegura que la imagen mantenga su proporción */
+    display: block; /* Asegura que la imagen sea un bloque */
+    margin: 20px auto; /* Centra la imagen */
+}
+
+
+/* Estilo de los botones con apariencia de cristal */
+button {
+    width: 200px; /* Ancho fijo de 200px */
+    height: 50px; /* Altura de los botones */
+    font-size: 16px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.3); /* Fondo transparente con un toque blanco */
+    color: #fff; /* Texto blanco */
+    font-weight: bold;
+    border: 2px solid rgba(255, 255, 255, 0.6); /* Borde suave */
+    border-radius: 12px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Efecto de transición suave */
+    outline: none; /* Elimina el contorno al hacer clic */
+}
+
+button:nth-child(1) {
+    background-color: green; /* Color verde para el primer botón */
+}
+
+button:nth-child(2) {
+    background-color: red; /* Color rojo para el segundo botón */
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.5); /* Fondo más visible al pasar el mouse */
+    border: 2px solid rgba(255, 255, 255, 1); /* Borde más fuerte al pasar el mouse */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); /* Sombra suave alrededor */
+}
+
+button:active {
+    background: rgba(255, 255, 255, 0.7); /* Fondo cuando se hace clic */
+    transform: scale(0.98); /* Efecto de reducción al hacer clic */
+}
